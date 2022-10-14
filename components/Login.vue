@@ -1,9 +1,9 @@
 <template>
-<section class="vh-100" style="background-image: url('/image/background.gif')">
+<section class="vh-200" style="background-image: url('/image/samplebgimage.gif')">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
-        <div class="card" style="border-radius: 1rem;">
+        <div class="card" style="border-radius: 1rem; background-color: gray;">
           <div class="row g-0">
             <div class="col-md-6 col-lg-5 d-none d-md-block">
                 
@@ -21,7 +21,7 @@
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                    <span class="h1 fw-bold mb-0" style="font-family: 'Press Start 2P'; color: #F8C8DC; font-size: 50px; margin-left: 30px; margin-top: 5px">WELCOME!</span>
+                    <span class="h1 fw-bold mb-0" style="font-family: 'Press Start 2P'; color:#F8C8DC; font-size: 50px; margin-left: 30px; margin-top: 5px">WELCOME!</span>
                   </div>
                   <div class="col-md-6 col-lg-5 d-none d-md-block">
               <img src="/image/cutie1.gif"
@@ -45,7 +45,12 @@
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-secondary btn-lg btn-block" type="button" style="font-family: 'Press Start 2P'; color:#F8C8DC; animation-name: sample1; animation-duration: 10s; animation-iteration-count: infinite; animation-direction: reverse; ">LOGIN</button>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit"  style="font-family: 'Press Start 2P'; color:#F8C8DC; animation-name: sample1; animation-duration: 10s; animation-iteration-count: infinite; animation-direction: reverse; ">
+                      <NuxtLink to="/Home" style="color:#F8C8DC">
+                        LOGIN
+                    </NuxtLink>
+                    </button>
+                 
                   </div>
 
                   <a class="fw-normal mb-3 pb-3" href="#!" style="font-family: 'Space Grotesk'; color: #cfcfc4; font-size: 18px">Forgot password?</a>
