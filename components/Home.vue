@@ -44,6 +44,10 @@
 <nuxt-link to="/Login" style="margin-top: 20px; color: azure;">
    Logout
     </nuxt-link>
+    <nuxt-link to="/StudentList" style="margin-top: 20px; color: azure;">
+   Students
+    </nuxt-link>
+
     </ul>
     <hr>
     
