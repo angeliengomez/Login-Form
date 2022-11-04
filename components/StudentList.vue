@@ -8,18 +8,12 @@
 
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
-
-
-
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
                     <span class="h1 fw-bold mb-0"
                       style="font-family: 'Press Start 2P'; color: black; font-size: 50px; margin-left: 300px; margin-top: 5px; align-items: center;">Student
                       List</span>
                   </div>
-
-
-
                   <div class="col-md-6 col-lg-4 d-none d-md-block">
                     <img src="/image/cutie.gif" alt="pic1" class="img-fluid"
                       style="border-radius: 1rem 1rem 0 1rem; margin-left: -30px; margin-top: -200px; size: contain; " />
@@ -37,14 +31,10 @@
                         <div class="row">
                           <div class="col">
                             <button @click="removeStudent(item)" style="font-family: 'Press Start 2P'">X</button>
-                            <b-button @click="editStudent(item)" v-b-modal.mymodal style="font-family: 'Press Start 2P'; margin-left: 10px;">E</b-button>
+                            <b-button @click="editStudent(item)" v-b-modal.mymodal style="font-family: 'Press Start 2P'; margin-top:-10px; margin-left: 10px;">E</b-button>
                           </div>
-
-                        </div>
-                        
+                        </div>                    
                       </template>
-
-
                     </b-table>
                     <form @submit.prevent="addStudent">
 
@@ -54,12 +44,9 @@
 
                       <button
                         style="margin-left: 300px; margin-top: 20px; margin-bottom: 20px; font-family: 'Press Start 2P' ">ADD
-                        STUDENT</button>
-                     
-
+                        STUDENT</button>                     
                       <div>
 <!-- 
-
                         <b-modal hide-footer id="mymodal" ref="modal"
                           title="Update Student Information">
                           <form ref="form" @submit.stop.prevent="handleSubmit">
@@ -80,25 +67,9 @@
                         </b-modal>
                         -->
                       </div>
-
-
                     </form>
-
-
                   </div>
-
-
-
-
-
-
                 </div>
-
-
-
-
-
-
               </div>
             </div>
           </div>
@@ -124,11 +95,8 @@ export default {
         { id: id++, LastName: 'Gomez', FirstName: 'Angelien', Course: 'BSIT' },
         { id: id++, LastName: 'Gomez', FirstName: 'Hatdog', Course: 'BSIT' },
         { id: id++, LastName: 'Gomez', FirstName: 'Sample', Course: 'BSIT' },
-
       ]
-
     }
-
   },
   methods: {
     addStudent() {
@@ -141,31 +109,18 @@ export default {
     removeStudent(item) {
       this.students = this.students.filter((t) => t !== item);
     },
-    updateStudent() {
-      this.students = this.students.splice({ id, LastName: this.newStudentlname, FirstName: this.newStudentfname, Course: this.newStudentcourse});
-      this.newStudent = ''
-    },
     editStudent(item)
     {
       if(item.isEditing)
                 {
                     this.$set(item, 'isEditing', false);
-                   
                 }
                 else
                 {
-                    this.$set(item, 'isEditing', true);
-                    
+                    this.$set(item, 'isEditing', true);  
                 }
     }
-  
-   
-   
-
   }
-
-
-
 }
 </script>
  

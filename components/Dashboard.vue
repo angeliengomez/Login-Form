@@ -13,8 +13,9 @@
     
                       <div class="d-flex align-items-center mb-3 pb-1">
                         <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                        <span class="h1 fw-bold mb-0" style="font-family: 'Press Start 2P'; color: #F8C8DC; font-size: 50px; margin-left: 300px; margin-top: 5px; align-items: center;">WELCOME TO DASHBOARD!</span>
+                        <span class="h1 fw-bold mb-0" style="font-family: 'Press Start 2P'; color: #F8C8DC; font-size: 50px; margin-left: 300px; margin-top: 5px; align-items: center;">WELCOME TO DASHBOARD!</span>             
                       </div>
+
 
     
                       <div class="col-md-6 col-lg-4 d-none d-md-block">
